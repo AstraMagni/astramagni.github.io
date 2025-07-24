@@ -18,3 +18,5 @@
     "tailwindcss": "^4.1.11"
   }
 }
+
+"export:gh-pages": "npm run build && touch ./out/.nojekyll"
