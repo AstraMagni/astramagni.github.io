@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/image+xml" href="/assets/icon copy.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet">
+    <title>Assami Express Viagens</title>
+  </head>
+  <body>
+    <header class="bg-red-700 p-4 flex">
+      <img class="h-20" src="./assets/icon copy.svg" alt="Não carregou, mas te amo amor">
+      <h1 class="mr-5 w-230 h-3 text-center scale-500">Assami Express - Viagens</h1>
+    </header>
+    <main class="p-4 flex flex-col">
+      <h1 class="font-bold fixed top-29 right-100 left-85">Escolha seus assentos:</h1>
+      <section id="container-escolha-assentos" class="flex justify-around py-5"> 
+        <section id="escolher-assentos" class="flex">
+          <ul class="mr-5">
+          <li id="a1" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">1</li>
+          <li id="a2" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">2</li>
+          <li id="a3" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">3</li>
+          <li id="a4" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">4</li>
+          <li id="a5" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">5</li>
+        </ul>
+        <ul class="mr-2">
+          <li id="a6" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">6</li>
+          <li id="a7" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">7</li>
+          <li id="a8" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">8</li>
+          <li id="a9" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">9</li>
+          <li id="a10" onclick="selecionarCadeira(this)" class="assento bg-green-400 w-8 h-6 mb-2 text-center font-bold rounded-t-lg hover:scale-120">10</li>
+        </ul>
+        </section>
+        <div id="container-preco-compra">
+          <p class="myDIV">Valor Total da Compra: </p>
+          <p class="hide bg-indigo-400 rounded-lg p-3 text-center font-bold break-normal fixed top-28 right-0 left-350">Beijinhos Coins, BJ$, é uma moeda exclusiva da Samira&Astra</p>
+          <p id="valor-total-compra" class="font-bold text-lg">BJ$ 0</p>
+        </div>
+      </section>
+      <button id="finalizar-compra" class="bg-indigo-500 w-100 h-20 hover:bg-red-500 p-3 rounded-lg mt-5 hover:font-bold hover:scale-110 fixed top-80 right-100 left-85" onclick="finalizarCompra()">Finalizar Compra</button>
+      <div id="video-container" style="display: none; margin-top: 150px;" class="w-120 h-60 fixed top-70 right-20">
+       <h2 id="mensagem-final" class="text-2xl font-bold mb-4 text-white fixed top-70 right-10">✨🚌 Acabaram as passagens, mas tem algo a mais...</h2>
+       <h2 id="mensagem-final" class="text-2xl font-bold mb-4 text-white fixed top-80 right-40">🌌 Abre em tela cheia hihihi 🌌</h2>
+        <video id="video-final" width="640" controls>
+        <source src="./assets/neptune.mp4" type="video/mp4">
+    </video>
+  </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
